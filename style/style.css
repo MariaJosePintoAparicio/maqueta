@@ -1,0 +1,105 @@
+
+.soleecito{
+    padding: 0;
+    background:  url("../img/sol.png") no-repeat bottom right;
+    width: 250px;
+    height: 200px;
+    position: absolute;
+    right: 100%;
+    left: 15px;
+    top: 10px;
+    animation:alumbrar infinite;
+    animation-duration: 2s;
+}
+@keyframes alumbrar {
+    0% {filter: opacity(0);}
+    20% {filter: opacity(0);}
+    100% {filter: opacity(1);}
+}
+.nuvecita{
+    padding: 0;
+    background:  url("../img/nube.png") no-repeat bottom right;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    right: 100%;
+    left: 15px;
+    top: 10px;
+    animation:muevete infinite;
+    animation-duration: 7s;
+    animation-iteration-count: 1;
+}
+@keyframes muevete{
+    0%{
+        transform: translate(0px);
+    }
+    60%{
+        transform: translate(600px);
+    
+   
+    }
+    100%{
+        transform: translate(990px);
+        opacity: 0.6;
+      
+    }
+    
+}
+.florecita{
+    padding: 0;
+    background:  url("../img/flor.png") no-repeat bottom right;
+    width: 970px;
+    height: 830px;
+    position: absolute;
+    right: 100%;
+    left: 5px;
+    top: 11px;
+    animation:crece 16s infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes crece{
+    0%{
+        filter: opacity(0);
+    }
+    15%{
+        filter: opacity(0);
+    }
+    60%{
+        filter: opacity(2);
+    }
+    100%{
+        filter: opacity(1);
+    }
+}
+
+.goticas{
+    padding: 0;
+    background:  url("../img/gota.png") no-repeat bottom right;
+    width: 850px;
+    height: 530px;
+    position: fixed;
+    right: 100%;
+    left: 5px;
+    top: 12px;
+    animation:llueve;
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    opacity: 0;
+}
+@keyframes llueve{
+    0%{
+        opacity: 100%;
+        top: 0;
+    }
+    50%{
+        opacity: 100%;
+        top: 200px;
+    }
+    100%{
+        opacity: 100%;
+        top: 600px;
+    }
+}
+
+
